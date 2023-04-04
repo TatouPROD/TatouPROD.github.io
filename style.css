@@ -1,0 +1,244 @@
+html {
+    scroll-behavior: smooth;
+  }
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    background: #000;
+    /*background-size: cover;*/
+}
+
+#background-video { 
+    position: fixed;
+    top: 0;
+    left: 0;
+    min-width: 100%;
+    min-height: 100%;
+    
+    object-fit:cover;
+    object-position: center;
+
+    transition: 1.5s;
+
+}
+
+header {
+    position: fixed;
+    width: 100%;
+    text-align: center;
+    color: #0053be;
+    background-color: #f0f8ff7e;
+    transition: .2s;
+    margin-top: 0px;
+    z-index: 1;
+  }
+
+header:hover {
+    color: #ffee00;
+    background-color: #0374bebb;
+}
+
+.header-scrolled {
+    background-color: #ffd000;
+}
+
+#main-title {
+    transition: .2s;
+    font-size: 3.5rem;
+    width: 100%;
+}
+
+
+
+
+nav a {
+    text-decoration: none;
+    color: inherit;
+    font-size: 2.5rem;
+    padding-top: 2px;
+    cursor: pointer;
+    margin-left: 2vw;
+    margin-right: 2vw;
+  }
+
+nav a:hover{
+    color:rgb(255, 166, 0);
+    /*border-radius: 20px;*/
+}
+
+.sticky{
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+
+section{
+    position:relative;
+
+}
+
+#space-for-bgv{
+    height: 95vh;
+}
+
+#main-place{
+    background-color: rgba(0, 76, 255, 0.8);
+    border-radius: 100px;
+    backdrop-filter: blur(10px);
+    box-shadow: 0px 10px 40px rgba(0, 0, 0, 0.7);;
+    width: 85vw;
+    height: calc(500px + 750 px + 500px + 4*65vw/2);
+    margin-left: auto;
+    margin-right: auto;
+    z-index: 0;
+}
+
+#main-place .frame{
+    border-radius: 50px;
+}
+
+#space1{
+    height: 75px;
+}
+
+#presentation{
+    background-color: red;
+    width: 73vw;
+    height: 500px;
+    top: -50px; 
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#space2{
+    height: 75px;
+}
+
+#download{
+    background-color: purple;
+    width: 73vw;
+    height: calc(4*65vw/2);
+    margin-left: auto;
+    margin-right: auto; 
+}
+
+
+#download .stage{
+    width: 65vw;
+    height: calc(65vw/2);
+    margin: auto;
+    text-align: center;
+}
+
+#download #stage1{
+    color: red;
+    background-color: rgb(0, 255, 106);
+}
+
+#download #stage2{
+    color: rgb(255, 0, 191);
+    background-color: rgb(255, 230, 0);
+}
+
+#download #stage3{
+    color: rgb(24, 18, 10);
+    background-color: rgb(219, 226, 236);
+}
+
+#download #stage4{
+    color: rgb(229, 255, 0);
+    background-color: rgb(212, 4, 212);
+}
+
+.stage #allIn1{
+    width: 65vw;
+    height: calc(65vw/2);
+    margin: auto;
+}
+
+.stage div{
+    float: left;
+    margin: auto;
+    width: calc(65vw/2);
+    height: calc(65vw/2);
+    
+}
+
+.stage .text .title{
+    padding-bottom: 3vw;
+}
+
+.down-button{
+    font-size: 2rem;
+    margin-top: 10%;
+    padding: 5px;
+    border-radius: 12px;
+    color: yellow;
+    background-color: red;
+    border-color: yellow;
+    cursor: pointer;
+}
+
+#wip{
+    background-color: gray;
+    color: brown;
+    cursor: default;
+}
+
+.logo img{
+    max-height: 100%;
+    margin: 0 auto;
+}
+
+
+
+
+#space3{
+    height: 75px;
+}
+
+#frame3{
+    background-color: orange;
+    width: 73vw;
+    height: 750px;
+    margin-left: auto;
+    margin-right: auto; 
+}
+
+#space4{
+    height: 75px;
+}
+
+#frame4{
+    background-color: white;
+    width: 73vw;
+    height: 500px;
+    margin-left: auto;
+    margin-right: auto; 
+}
+
+#copyright{
+    text-align: center;   
+}
+
+#go-up{
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: .2s;
+    width: 4vw;
+    height: 4vw;
+    bottom: 2vh;
+    right: 1.4vw;
+    border-radius: 20px;
+    background-color: rgb(0, 76, 255);
+}
+
+#go-up img{
+    max-height: 75%;
+}
+
+
