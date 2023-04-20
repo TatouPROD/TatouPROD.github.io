@@ -1,0 +1,411 @@
+html {
+    scroll-behavior: smooth;
+  }
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    background: #000;
+    /*background-size: cover;*/
+}
+
+#background-video {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    min-width: 100%;
+    min-height: 100%;
+    object-fit: cover;
+    object-position: center;
+
+    transition : 1.5s
+    }
+
+header {
+    position: fixed;
+    width: 100%;
+    text-align: center;
+    color: #0053be;
+    background-color: #f0f8ff7e;
+    transition: .2s;
+    margin-top: 0px;
+    z-index: 1;
+  }
+
+header:hover {
+    color: #ffee00;
+    background-color: #0374bebb;
+}
+
+.header-scrolled {
+    background-color: #ffd000;
+}
+
+#main-title {
+    transition: .2s;
+    font-size: 3.5rem;
+    width: 100%;
+}
+
+nav a {
+    text-decoration: none;
+    color: inherit;
+    font-size: 2.5rem;
+    padding-top: 2px;
+    cursor: pointer;
+    margin-left: 2vw;
+    margin-right: 2vw;
+  }
+
+nav a:hover{
+    color:rgb(255, 166, 0);
+}
+
+a[href='?lang=fr'], a[href='?lang=en'] {
+    font-size: 1.5rem;
+}
+  
+
+
+.sticky{
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+
+section{
+    position:relative;
+
+}
+
+#space-for-bgv{
+    height: 95vh;
+}
+
+#main-place{
+    background-color: rgba(0, 76, 255, 0.8);
+    border-radius: 100px;
+    backdrop-filter: blur(10px);
+    box-shadow: 0px 10px 40px rgba(0, 0, 0, 0.7);;
+    width: 85vw;
+    height: calc(500px + 750 px + 500px + 4*65vw/2);
+    margin-left: auto;
+    margin-right: auto;
+    z-index: 0;
+}
+
+#main-place .frame{
+    border-radius: 50px;
+}
+
+#space1{
+    height: 75px;
+}
+
+#presentation{
+    background-color: red;
+    width: 73vw;
+    height: 500px;
+    top: -50px; 
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#space2{
+    height: 75px;
+}
+
+#download{
+    position: relative;
+    background-color: purple;
+    width: 73vw;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto; 
+}
+
+#load_more {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+
+#download .stage{ /*Création de 2 colonnes pour mettre l'image d'un coté et le texte de l'autre*/
+    width: 65vw;
+    height: calc(65vw/2);
+    min-height: 400px;
+    margin: auto;
+    text-align: center;
+    font-size: 1em;
+}
+
+#download #stage1{
+    color: red;
+    background-color: rgb(0, 255, 106);
+}
+
+#download #stage2{
+    color: rgb(255, 0, 191);
+    background-color: rgb(255, 230, 0);
+}
+
+#download #stage3{
+    color: rgb(24, 18, 10);
+    background-color: rgb(219, 226, 236);
+}
+
+#download #stage4{
+    color: rgb(229, 255, 0);
+    background-color: rgb(212, 4, 212);
+}
+
+.stage #allIn1{
+    width: 65vw;
+    height: calc(65vw/2);
+    margin: auto;
+}
+
+.stage div{
+    float: left;
+    margin: auto;
+    width: calc(65vw/2);
+    height: calc(65vw/2);
+    
+}
+
+.stage .text .title{
+    padding-bottom: 1vw;
+}
+
+.down-button, #load_more{
+    font-size: 3vw;
+    margin-top: 10%;
+    padding: 0.2vw;
+    border-radius: 12px;
+    color: yellow;
+    background-color: red;
+    border-color: yellow;
+    cursor: pointer;
+}
+
+
+
+
+#wip{
+    background-color: gray;
+    color: brown;
+    cursor: default;
+}
+
+.logo img{
+    max-height: 100%;
+    min-height: 200px;
+    margin: 0 auto;
+}
+
+
+
+#space3{
+    height: 75px;
+}
+
+#frame3{
+    position: relative;
+    background-color: orange;
+    width: 73vw;
+    height: 950px;
+    margin-left: auto;
+    margin-right: auto;
+    color: blue;
+}
+
+#space4{
+    height: 75px;
+}
+
+#frame4{
+    position: relative;
+    background-color: white;
+    width: 73vw;
+    height: 500px;
+    margin-left: auto;
+    margin-right: auto; 
+    padding:0 10px;
+    color: rgb(0, 0, 0);
+}
+
+h2 {
+    font-size: 3vw;
+    text-align: center;
+    margin-top: 1em;
+    padding-top:5px;
+}
+
+h3{
+    font-size: 2vw;
+    max-height : 3em;
+    margin:0;
+}
+
+h6{
+    font-size: 1.5vw;
+}
+
+
+#copyright{
+    text-align: center;   
+}
+
+#go-up{
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: .2s;
+    width: 0px;
+    height: 0px;
+    bottom: 2vh;
+    right: 1.4vw;
+    border-radius: 20px;
+    background-color: rgb(0, 76, 255);
+}
+
+#go-up img{
+    max-height: 75%;
+}
+
+
+#avis {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: calc(50% - 20px);
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    padding: 20px;
+    border: 10px solid #ccc;
+    border-radius: 5px;
+}
+
+label {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+select, textarea {
+    margin-bottom: 15px;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+    width: 100%;
+    box-sizing: border-box;
+    resize: none;
+}
+
+textarea {
+    height: 100px;
+}
+
+input[type="submit"] {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+}
+
+input[type="submit"]:hover {
+    background-color: #3e8e41;
+}
+
+h4 {
+    font-size: 2em;
+    padding: 10px;
+    text-align: center;
+    margin: 0;
+  }
+
+  
+/* Note */
+ h5 {
+    font-size: 4em;
+    text-align: center;
+    margin: 20px;
+  }
+
+  
+  .commentaire {
+    background-color: #f8f8f8;
+    border: 10px solid #ddd;
+    border-radius: 5px;
+    padding: 10px;
+    margin-right: 10px;
+    margin-left: 10px;
+    font-size: 16px;
+    width: calc(33.33% - 20px);
+    box-sizing: border-box;
+    display: inline-block;
+    height:230px;
+    text-align: center;
+    color: black;
+    font-size: 20px;
+    overflow: auto;
+    word-wrap: break-word;
+  }
+
+  
+
+@media (max-width: 1024px) { /* styles pour les écrans de tablette */
+    .logo img{ /*On enlève les images*/
+        visibility: hidden;
+        display: none;
+    }
+
+    div{
+        float:none;
+    }
+    
+    .stage div{ /*On annule les 2 colonnes et on affiche le texte au milieu en haut*/
+        float: none;
+        margin: auto;
+        width: 100%;
+        height: auto;
+        text-align: center;
+    }
+
+
+    #frame3{
+        height: 1180px;
+    }   
+
+    .commentaire {  /* 2 commentaires puis 1*/
+        width: calc(50% - 20px);
+        margin-bottom: 20px;
+        }
+        .commentaire:nth-child(2n+1) {
+        clear: left;
+        }
+}
+  
+
+
+@media (max-width: 768px) { /* styles pour les écrans de téléphone */
+    .commentaire{ /* Les 3 commentaires sont l'un en dessous de l'autre*/
+        display: block;
+        width: calc(100% - 20px);
+        height:230px;
+    }
+
+    #frame3{
+        height: 1410px;
+    }
+}
